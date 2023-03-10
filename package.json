@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "Lakewood Dental Care",
+  "description": "Lakewood Dental Care",
   "version": "1.1.3",
-  "author": "Austin Green",
+  "author": "James Lee, DDS",
+  "repository": "https://github.com/frontendRaj/lakewooddental",
   "dependencies": {
     "bulma": "^0.9.0",
     "gatsby": "^4.0.0",
@@ -40,10 +41,7 @@
     "clean": "gatsby clean",
     "start": "npm run develop",
     "build": "npm run clean && gatsby build",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "npm run clean && gatsby develop"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
