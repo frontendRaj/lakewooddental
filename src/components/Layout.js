@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
+import "../styles/custom.css";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
@@ -10,6 +11,7 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
+      <div className="left-header__bar">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -49,8 +51,11 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
+      </div>
+      <main className="right--content__container">
       <div>{children}</div>
       <Footer />
+      </main>
     </div>
   );
 };
